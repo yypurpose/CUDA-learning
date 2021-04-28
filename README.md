@@ -9,7 +9,7 @@ won't be to many, which limits the ability of parallel computing.
 
 However, only GPU is not able to complete parallel computing. Serial computing part of the program is executed by CPU, and GPU only performs calculation tasks in parallel part.
 
-## CUDA thread model
+## CUDA thread & memory model
 
 ### Software
 
