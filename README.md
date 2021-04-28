@@ -19,7 +19,7 @@ However, only GPU is not able to complete parallel computing. Serial computing p
 
 3. **Grid:** composed by a number of thread blocks. Each grid has **global memory**, **constant memory** and **testure memory** for threads in the grid. A kernel function/program is run on a grid.
 
-    **speed**: register > local memory > shared memory > global memory
+![avatar](https://img2018.cnblogs.com/blog/1093303/201809/1093303-20180919123018799-1605248744.png)
 
 ### Hardware
 1. **SP:** stream processor or CUDA core, is the basic unit of parallel computing on the hardware level. 
@@ -32,6 +32,10 @@ However, only GPU is not able to complete parallel computing. Serial computing p
 1. thread - SP
 2. thread block - SM
 3. grid - GPU (a kernel is run on a grid/GPU)
+
+![avatar](https://img2018.cnblogs.com/blog/1093303/201809/1093303-20180919123034967-1110899742.png)
+
+**speed**: register > local memory > shared memory > global memory
 
 ## CUDA programming
 **TODO:**
