@@ -24,9 +24,9 @@ However, only GPU is not able to complete parallel computing. Serial computing p
 ### Hardware
 1. **SP:** stream processor or CUDA core, is the basic unit of parallel computing on the hardware level. 
 
-2. **SM:** stream multiprocessor or GPU big core, is composed by a number of SP and other hardware resources (e.g., warp, register, **shared memory**). 
+2. **SM:** stream multiprocessor, is composed by a number of SP and other hardware resources (e.g., warp, register, **shared memory**). 
 
-3. **GPU:** composed by a number of SM unit.
+3. **GPU:** (graphics processing unit) composed by a number of SM unit.
 
 **software vs. hardware:** 
 1. thread - SP
