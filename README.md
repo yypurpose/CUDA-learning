@@ -38,7 +38,37 @@ However, only GPU is not able to complete parallel computing. Serial computing p
 **speed**: register > local memory > shared memory > global memory
 
 ## CUDA programming
-**TODO:**
+# Terminology
+Host <-> CPU
+
+Device <-> GPU
+
+Kernel <-> function that runs on the device
+
+# API
+**cudaMalloc:** allocate global memory on device.
+
+**cudaFree:** release memory on device.
+
+**cudaMemcpy**(void *dst, void *src, size_t nbytes,
+enum cudaMemcpyKind direction): transfer data between GPU/CPU.
+
+    cudaMemcpyKind:
+    1. cudaMemcpyHostToDevice（CPU->GPU）
+    2. cudaMemcpyDeviceToHost（GPU->CPU）
+    3. cudaMemcpyDeviceToDevice（GPU->GPU)
+
+**kernel function:**
+    ![avatar](https://img2018.cnblogs.com/blog/1093303/201809/1093303-20180919123125957-1702896390.png)
+
+    execute code:
+    KernelFunc<<<blockNumber, threadPerBlock>>>(args);
+
+# Demo
+**matrix multiplication**
+
+    nvcc ./src/matrix_multiplication.cu -o matrix_multiplication
+    ./matrix_multiplication.out
 
 ## References
 [cnblog](https://www.cnblogs.com/skyfsm/p/9673960.html)
