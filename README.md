@@ -60,7 +60,7 @@ enum cudaMemcpyKind direction): transfer data between GPU/CPU.
 
 **kernel function:**
 
-    ![avatar](https://img2018.cnblogs.com/blog/1093303/201809/1093303-20180919123125957-1702896390.png)
+![avatar](https://img2018.cnblogs.com/blog/1093303/201809/1093303-20180919123125957-1702896390.png)
 
     execute code:
     KernelFunc<<<blockNumber, threadPerBlock>>>(args);
